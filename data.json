@@ -1,0 +1,20 @@
+[
+    {
+        "id": 1,
+        "name": "Green View PG",
+        "price": 8000,
+        "location": "Salt Lake, Kolkata",
+        "image": "images/pg1.jpg",
+        "owner": "Rajesh Gupta",
+        "contact": "+91 9876543210"
+    },
+    {
+        "id": 2,
+        "name": "Blue Haven PG",
+        "price": 12000,
+        "location": "Whitefield, Bangalore",
+        "image": "images/pg2.jpg",
+        "owner": "Anjali Kumar",
+        "contact": "+91 8765432109"
+    }
+]

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PG Hunter</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>PG Hunter</h1>
+        <p>Your ultimate destination to find paying guest accommodations.</p>
+    </header>
+
+    <main>
+        <!-- Search and Filter Section -->
+        <section id="filters">
+            <h2>Search PGs</h2>
+            <div>
+                <label for="location">Location/ZIP Code:</label>
+                <input type="text" id="location" placeholder="Enter locality or ZIP code">
+            </div>
+            <div>
+                <label for="price-range">Price Range:</label>
+                <input type="range" id="price-range" min="1000" max="20000" step="500" value="10000">
+                <span id="price-display">₹10000</span>
+            </div>
+            <button id="search-btn">Search</button>
+        </section>
+
+        <!-- Results Section -->
+        <section id="results">
+            <h2>Available PGs</h2>
+            <div id="pg-list">
+                <!-- PG details will be dynamically loaded here -->
+            </div>
+        </section>
+
+        <!-- Update Form Section -->
+        <section id="update-form">
+            <h2>Update PG Details</h2>
+            <form id="pg-update-form">
+                <label for="pg-id">PG ID:</label>
+                <input type="text" id="pg-id" placeholder="Enter PG ID" required>
+
+                <label for="pg-name">PG Name:</label>
+                <input type="text" id="pg-name" placeholder="Enter PG Name" required>
+
+                <label for="pg-price">Price:</label>
+                <input type="number" id="pg-price" placeholder="Enter Price" required>
+
+                <label for="pg-location">Location:</label>
+                <input type="text" id="pg-location" placeholder="Enter Location" required>
+
+                <label for="pg-owner">Owner Name:</label>
+                <input type="text" id="pg-owner" placeholder="Enter Owner Name" required>
+
+                <label for="pg-contact">Owner Contact:</label>
+                <input type="text" id="pg-contact" placeholder="Enter Contact Number" required>
+
+                <label for="pg-image">Image URL:</label>
+                <input type="text" id="pg-image" placeholder="Enter Image URL" required>
+
+                <button type="submit">Update PG</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 PG Hunter. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
